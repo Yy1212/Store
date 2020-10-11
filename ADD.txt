@@ -1,3 +1,7 @@
+//语言格式：C#
+/*
+计算器的原始版本
+*/
 using System;
 using System.Collections.Generic;
 using System.Linq;
