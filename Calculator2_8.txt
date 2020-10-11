@@ -1,0 +1,115 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Add
+{
+    class Calculation
+    {
+        int number1;
+        int number2;
+        string x;
+        string y;
+        
+        public string X
+        {
+            get { return x; }
+            set { x = value; }
+        }
+        
+        public string Y
+        {
+            get { return y; }
+            set { y = value; }
+        }
+
+        public int Number2
+        {
+            get { return number2; }
+            set { number2 = value; }
+        }
+
+        public int Number1
+        {
+            get { return number1; }
+            set { number1 = value; }
+        }
+        
+        public int _Add()  //加
+        {
+            return number1 + number2;
+        }
+        public String Add()
+        {
+            return x + y;
+        }
+        public int _Reduce()  //减
+        {
+            return number1 - number2;
+        }
+        public String Reduce()
+        {
+            for (int i = 0; i < Y.Length; i++)
+            {
+                X = x.Replace(Y[i],' ');
+            }
+            X = X.Trim();
+            return X;
+        }
+        public int _Ride()   //乘
+        {
+            return number1 * number2;
+        }
+        public int _Except()   //除
+        {
+            return number1 / number2;
+        }
+        public void operation(string x)
+        {
+            if (x == "+")
+                Console.WriteLine("整数和为：" + _Add());
+            else if (x == "S+")
+                Console.WriteLine("字符串连接:" + Add());
+            else if (x == "-")
+                Console.WriteLine("整数差为：" + _Reduce());
+            else if (x == "S-")
+                Console.WriteLine("字符串删除:" + Reduce());
+            else if (x == "*")
+                Console.WriteLine("乘为：" + _Ride());
+            else if (x == "/")
+                Console.WriteLine("除为：" + _Except());
+            else
+                Console.WriteLine("符号输入错误！！！");
+            
+        }
+        public bool Equals (int number1,int number2)
+        {
+            if (number1 == number2)
+                return true;
+            else
+                return false;
+        }
+    }
+}
+namespace Add
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Calculation C=new Calculation ();
+            Console.WriteLine("请输入第一个字符串：");
+            C.X = Convert.ToString(Console .ReadLine ());
+            Console.WriteLine("请输入运算符号：");
+            string x = Convert.ToString(Console.ReadLine());
+            Console.WriteLine("请输入第二个字符串：");
+            C.Y = Convert.ToString(Console.ReadLine());
+            C.operation(x);
+            //if(C.Equals (C.Number1 ,C.Number2 ))
+            //    Console.WriteLine("两数相同");
+            //else
+            //    Console.WriteLine("两数不同");
+        }
+    }
+}
