@@ -1,0 +1,6 @@
+D:\大三\C#\C#实验\Add\Add\bin\Debug\Add.exe
+D:\大三\C#\C#实验\Add\Add\bin\Debug\Add.pdb
+D:\大三\C#\C#实验\Add\Add\obj\x86\Debug\Add.exe
+D:\大三\C#\C#实验\Add\Add\obj\x86\Debug\Add.pdb
+D:\大三\C#\C#实验\Add\Add\obj\x86\Debug\Add.csprojAssemblyReference.cache
+D:\大三\C#\C#实验\Add\Add\obj\x86\Debug\Add.csproj.CoreCompileInputs.cache
